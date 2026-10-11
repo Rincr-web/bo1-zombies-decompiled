@@ -190,7 +190,7 @@ void PlayerCmdSP_visionsetlaststand(scr_entref_t entref)
 void PlayerCmdSP_setmaxhealth(scr_entref_t entref)
 {
     gentity_s *ent = GetEntity(entref);
-    int value = Scr_GetInt(9999999, SCRIPTINSTANCE_SERVER);
+    int value = Scr_GetInt(0, SCRIPTINSTANCE_SERVER);
     ent->health = value;
     ent->maxHealth = value;
     if (ent->client)
